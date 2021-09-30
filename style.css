@@ -1,0 +1,84 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #888;
+  font-size: 110%;
+  background-size: cover;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  flex-direction: column;
+  background-color: #000000d0;
+  padding: 2em;
+  border-radius: 24px;
+  width: 100%;
+  max-width: 50vw;
+}
+
+.search {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+button {
+  border: none;
+  border-radius: 80px;
+  padding: 1.5em;
+
+  margin-left: 1em;
+  background: #7c7c7c2b;
+  color: #fff;
+}
+
+button:hover {
+  background: #7c7c7c6b;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.weather.loading {
+  visibility: hidden;
+}
+
+.weather.loading:after {
+  visibility: visible;
+  content: "Loading...";
+}
+
+.search-bar {
+  padding: 0.5em;
+  border-radius: 8px;
+  border: none;
+  font-family: inherit;
+  background: #7c7c7c2b;
+  color: #fff;
+  font-size: 120%;
+  width: 40%;
+}
+
+.humidity {
+  margin-bottom: 1em;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.description {
+  text-transform: capitalize;
+}
+
+.temp {
+  margin: 0;
+}
